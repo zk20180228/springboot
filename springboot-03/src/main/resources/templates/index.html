@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>springboot-thymeleaf</title>
+    <link href="/css/innex.css" rel="stylesheet" />
+    <script type="text/javascript" src="/webjars/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+<center>
+    <img src="/images/logo.png" />
+    <h1 id="title" th:text="${title}"></h1>
+</center>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(function(){
+        $("#title").click(function(){
+            alert("你好!")
+        });
+
+    })
+
+
+</script>
